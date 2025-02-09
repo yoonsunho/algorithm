@@ -12,7 +12,7 @@ for test_case in range(1, T + 1):
 
     for i in range(N):
         cnt = 1
-        for j in range(i+1,N):
+        for j in range(i+1, N):
             if ai[i] == ai[j]:
                 cnt += 1
             if cnt > count:
