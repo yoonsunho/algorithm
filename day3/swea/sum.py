@@ -1,8 +1,6 @@
 import sys
 sys.stdin = open("sum.txt", "r")
 
-
-
 for _ in range(10):
 
     T = int(input())

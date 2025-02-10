@@ -24,10 +24,6 @@ def select(a, k):
 
 print(select(arr,3)) # 22
 
-def select(a,n,k):
-    for i in range(n-1):
-        min_idx = i
-        for j in range(n):
-            if a[j] < a[i]:
-                a[i], a[j] = a[j], a[i]
+
+
 
