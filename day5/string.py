@@ -34,3 +34,14 @@ c = '1001'
 d = int(c, 2)   # 2 진수로 변환
 print(b)    # 15
 print(d)    # 9 (1+8)
+
+print('----------------')
+s = '123'
+def atoi(st):
+    i = 0
+    for x in st:
+        i = i*10 + ord(x)-ord('0')
+    return i
+
+a= atoi(s)
+print(a+1)  # 124

@@ -1,14 +1,14 @@
-# s1 = 'ab'* 6
-# print(s1)   # abababababab
-# s = ['a', 'b', 'c']
-# print('.'.join(s))  # a.b.c
-#
-# txt = list(input())     # abcde
-# N = len(txt)
-# for i in range(N//2):   # 홀, 짝 모두 동일(몫)
-#     txt[i], txt[N-1-i] = txt[N-1-i], txt[i]
-#
-# print(txt)  # ['e', 'd', 'c', 'b', 'a']
+s1 = 'ab'* 6
+print(s1)   # abababababab
+s = ['a', 'b', 'c']
+print('.'.join(s))  # a.b.c
+
+txt = list(input())     # abcde
+N = len(txt)
+for i in range(N//2):   # 홀, 짝 모두 동일(몫)
+    txt[i], txt[N-1-i] = txt[N-1-i], txt[i]
+
+print(txt)  # ['e', 'd', 'c', 'b', 'a']
 
 # 연습문재 1
 s = 'string'
