@@ -9,7 +9,6 @@ for test_case in range(1, T + 1):
     num_list = list(input().split())
 
     arr = ["ZRO", "ONE", "TWO", "THR", "FOR", "FIV", "SIX", "SVN", "EGT", "NIN"]
-    lis = {}
 
     new_arr = []
     for j in range(10):

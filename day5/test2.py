@@ -23,8 +23,8 @@ print(''.join(s_list))  # string
 N = 4
 txt = input()
 total = 0
-for j in range(8 - N +1):   # 회문을 확인하는 구간의 첫 글자 인덱스
-    for k in range(N //2):  # 회문 길이의 절반만큼 비교(바꾸기)
+for j in range(8 - N + 1):   # 회문을 확인하는 구간의 첫 글자 인덱스
+    for k in range(N // 2):  # 회문 길이의 절반만큼 비교(바꾸기)
         if txt[j+k] != txt[j+N-1-k]:
             break   # 비교 글자라 다르면 현재 구간 중지
     else:   # break에 걸리지 않고 for 종료, 회문이면
