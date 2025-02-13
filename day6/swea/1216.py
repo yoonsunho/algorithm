@@ -1,5 +1,6 @@
 import sys
 sys.stdin = open("txt/1216.txt", "r")
+# 내 실패한 코드
 
 # 여러개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
 for _ in range(10):
