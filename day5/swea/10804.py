@@ -15,7 +15,7 @@ for test_case in range(1, T + 1):
             str_ori[i] = 'p'
         if str_ori[i] == 'b':
             str_ori[i] = 'd'
-        if str_ori[i] == 'd':
+        elif str_ori[i] == 'd':
             str_ori[i] = 'b'
 
     result = ''.join(str_ori)
