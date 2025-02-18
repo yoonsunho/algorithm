@@ -22,7 +22,8 @@ for x in txt:
             break   # for x
         else:
             top -= 1
-                    # 소괄호만 있으므로 비교 작업 생략
+
+                # 소괄호만 있으므로 비교 작업 생략
 if top > -1:    # 여는 괄호가 남아있으면
     ans = 0
 
