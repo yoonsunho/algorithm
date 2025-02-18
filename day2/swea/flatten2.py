@@ -12,7 +12,7 @@ for test_case in range(1, T + 1):
 
     for _ in range(dump):  # 이 for문은 반복문에 불과하기 때문에 _ 사용
 
-        max_idx, max_box_height = 0,box_heights[0]
+        max_idx, max_box_height = 0, box_heights[0]
         min_idx, min_box_height = 0, box_heights[0]
 
         for i in range(len(box_heights)):
