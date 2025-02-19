@@ -16,7 +16,7 @@ def dfs(v, N):
                 stack.append(v)
                 v = w
                 break
-        else:
+        else:       # 위에서 break가 걸리지 않을 때 실행 ( v가 5일때
             if stack:
                 v = stack.pop()
             else:
