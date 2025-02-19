@@ -26,11 +26,4 @@ for test_case in range(1, T + 1):
             top -= 1
             stack.pop()
 
-
-
-
-
-
-
-
     print(f'#{test_case} {"".join(stack)}')
