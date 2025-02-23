@@ -41,6 +41,7 @@ for test_case in range(1, T + 1):
                 ans = 'error'
                 break
         else:        # . 라면
+            ###################여기 조건 주의!!!!!!!!!!!
             if top == 0:
                 ans = stack[top]
             else:
