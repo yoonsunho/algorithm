@@ -1,6 +1,9 @@
 import sys
 sys.stdin = open("txt/6485.txt", "r")
 
+# 살짝 졸면서 풀긴함 25m
+# 그래도 스스로 품
+
 T = int(input())
 
 for tc in range(1, T+1):
