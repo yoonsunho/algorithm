@@ -15,7 +15,7 @@ for test_case in range(1, T + 1):
         num_card[num % 10] += 1
         num //= 10
 
-    # print(num_card)
+    print(num_card)
 
     i = 0
     run_num = 0

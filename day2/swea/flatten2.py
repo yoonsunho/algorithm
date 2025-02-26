@@ -28,16 +28,6 @@ for test_case in range(1, T + 1):
         if max_box_height - min_box_height <= 1:
             break
 
-        # max_box_height = max(box_heights)  # .max() 시간복잡도: O(n)
-        # min_box_height = min(box_heights)
-
-        # # 평탄화 높이 차이가 1 이하라면 굳이 평탄화를 할 필요가 없음
-        # if max_box_height - min_box_height <= 1:
-        #     break
-        #
-        # # index라는 내장함수 안쓸 순 없을까? .index() 시간 복잡도:O(n)이기 때문..
-        # max_idx = box_heights.index(max_box_height)
-        # min_idx = box_heights.index(min_box_height)
 
         box_heights[max_idx] -= 1
         box_heights[min_idx] += 1
