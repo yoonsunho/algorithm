@@ -24,7 +24,7 @@ for _ in range(1, 11):
     for i in range(100):
         sl_sum += matrix[i][i]
         re_sum += matrix[i][99-i]
-    max_s = max(sl_sum,re_sum)
+    max_s = max(sl_sum, re_sum)
     max_v = max(max_v, max_s)
 
 
