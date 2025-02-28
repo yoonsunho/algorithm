@@ -40,5 +40,4 @@ for tc in range(1, T+1):
 
             max_count = max(max_count, count)
 
-
     print(f'#{tc} {max_count}')
