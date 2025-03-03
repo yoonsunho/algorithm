@@ -28,7 +28,7 @@ arr = list(map(int, input().split()))
 # 여기까지 인접리스트 -----------------
 # 인접리스트 만드는 두번쨰 방법 -------------------------
 adj_l = [[] for _ in range(V+1)]
-for i in range(0,E*2,2):
+for i in range(0, E*2, 2):
     v1, v2 = arr[i], arr[i+1]
     adj_l[v1].append(v2)
     adj_l[v2].append(v1)    # 방향이 없는 경우
