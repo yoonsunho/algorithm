@@ -15,9 +15,10 @@ for x in fx:
             susik += stack[top]     # peek
             top -= 1
         top -= 1    # '(' 버림.pop
-    else
+    else:
+        pass
 
-# susik = '6528-*2/+'
+susik = '6528-*2/+'
 
 
 for x in susik:

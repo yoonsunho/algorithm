@@ -5,7 +5,8 @@ def post_order(n):
     if n:
         post_order(left[n])
         post_order(right[n])
-        print(n, end="")
+        # print(node[n], end=" ")
+        ans.append(node[n])
 
 
 for tc in range(1, 11):
@@ -15,6 +16,7 @@ for tc in range(1, 11):
     right = [0] * (N+1)
     node = [0] * (N+1)  # 각 노드의 값들을 담을 배열
     # print(node)
+    ans = []
 
     for _ in range(N):
         arr = list(input().split())
@@ -27,9 +29,37 @@ for tc in range(1, 11):
             left[i] = int(arr[2])
             right[i] = int(arr[3])
 
-    print(left)
-    print(right)
+    # print(left)
+    # print(right)
     post_order(1)
-    print(node)
+    # print(node)
+    # print(ans)
+    stack = [0] * 1000
+    top = -1
+    # print(ans)
+    for x in ans:
+        if x not in ['+', '-', '*', '/']:
+            top += 1
+            stack[top] = x
+        else:
+            op2 = stack[top]  # pop(), 오른쪽 피연산자
+            # print(type(op2))
+            top -= 1
+            op1 = stack[top]  # pop(), 왼쪽 피연산자
+            # print(type(op1))
+            top -= 1
+            if x == '+':
+                top += 1
+                stack[top] = op1 + op2
+            elif x == '-':
+                top += 1
+                stack[top] = op1 - op2
+            elif x == '*':
+                top += 1
+                stack[top] = int(op1 * op2)
+            elif x == '/':
+                top += 1
+                stack[top] = int(op1 / op2)
 
-    print(f'#{tc} ')
+    # print(stack)
+    print(f'#{tc} {stack[top]}')
