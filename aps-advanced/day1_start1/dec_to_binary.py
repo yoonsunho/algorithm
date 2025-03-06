@@ -6,7 +6,7 @@ target = 74     # 10진수
 def dec_to_binary(target):
     binary_number = ''
 
-    while target >0:
+    while target > 0:
         remain = target % 2     # 2로 나눈 나머지
         binary_number = str(remain) + binary_number
         target = target // 2   # 2 로 나눈다
