@@ -26,7 +26,7 @@ def post_order(T):      # 후위 순회
         print(T, end=" ")  # visit[T]에서 할 일 처리
 
 
-N =int(input())        # 1 번부터 N번까지인 정점
+N = int(input())        # 1 번부터 N번까지인 정점
 E = N - 1               # 간선 수
 arr = list(map(int, input().split()))
 

@@ -7,7 +7,7 @@ def enq(n):
 
     c = last        # 부모의 키 값과 비교하기 위해
     p = c // 2      # 부모 정점 번호 계산
-    while p!= 0 and heap[p] < heap[c]:   # 부모가 있고, 붐 < 자식( 최대힙 조건 위반)
+    while p != 0 and heap[p] < heap[c]:   # 부모가 있고, 붐 < 자식( 최대힙 조건 위반)
         heap[p], heap[c] = heap[c], heap[p]
         c = p       # 현재 부모를 자식으로
         p = c // 2    # 부모의 부모
