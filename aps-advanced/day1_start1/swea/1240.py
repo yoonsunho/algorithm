@@ -12,7 +12,7 @@ for tc in range(1, T+1):
     print(matrix)
 
     for i in range(N):
-
+        pass
 
 
 
