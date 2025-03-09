@@ -11,7 +11,8 @@ for tc in range(1, T+1):
     matrix = [input() for _ in range(N)]
     print(matrix)
 
-    for x in
+    for i in range(N):
+
 
 
 
