@@ -1,25 +1,35 @@
-def f(i, N, s, t):       # i인덱스, N 배열 크기. i-1까지 결정한 원소의 합
-    global cnt
-    cnt += 1
-    if s > t:   # 찾는 합보다 커지면 중지
-        return
+def f(i, N):     # i: 인덱스, N: 배열 크기
     if i == N:
-        if s == t:  # 찾는 값이면
-            print(bit, s)
-        elif s > t:     # 찾는 합보다 커지면 중지
-            return
-        elif i == N:
-            return
-        elif s + rs < t:    # 남은 원소를 다 더해도 찾을 수 없으면
-            return 
+        print(bit)
+        s = 0
+        for j in range(N):
+            if bit[j]:
+                s += A[j]
+        print(s)
     else:
-        bit[i] = 1      # bit[i]를 1로 결정
-        f(i+1, N, s+A[i],t,rs-A[i])
+        bit[i] = 1      # bit[i]를 1 로 결정
+        f(i+1, N)        # bit[i+1] 결정하러 이동
         bit[i] = 0
-        f(i+1,N,s,t,rs-A[i])
+        f(i+1, N)
 
-A = [1,2,3,4,5,6,7,8,9,10]
+A = [1, 2, 3]
 bit = [0] * len(A)
-cnt = 0
-f(0,len(A),0,55)
-print(cnt)
+f(0, len(A))
+'''
+[1, 1, 1]
+6
+[1, 1, 0]
+3
+[1, 0, 1]
+4
+[1, 0, 0]
+1
+[0, 1, 1]
+5
+[0, 1, 0]
+2
+[0, 0, 1]
+3
+[0, 0, 0]
+0
+'''
