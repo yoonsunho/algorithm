@@ -1,6 +1,8 @@
 import sys
 sys.stdin = open("txt/2055.txt", "r")
 
+# 내 풀이
+
 def check(arr):
     ans = 0
 
