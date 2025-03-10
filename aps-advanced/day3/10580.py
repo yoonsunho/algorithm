@@ -2,7 +2,8 @@ import sys
 from itertools import combinations
 sys.stdin = open("txt/10580.txt", "r")
 
-# 시작점이 더 크고 끝점이 더 낮은 경우 고려 안함
+# 내 풀이
+# 시작점이 더 크고 끝점이 더 낮은 경우 고려 안해서 처음에 틀림
 
 def check(check_list):
     # print(check_list)
