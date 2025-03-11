@@ -30,7 +30,7 @@ def shuffle(n, arr,c):
             arr[2*i+1] = new_card[k+i+1]
         arr[n-1] = new_card[k]
     # print(arr)
-    shuffle(n, arr, c+1)
+    return shuffle(n, arr, c+1)
 
 
 T = int(input())
@@ -46,6 +46,6 @@ for tc in range(1, T+1):
     cnt = 0
 
     ans = shuffle(N, num_card, cnt)
-    print(ans)
+    # print(ans)
 
-    print(f'#{tc}')
+    print(f'#{tc} {" ".join(map(str,ans))}')
