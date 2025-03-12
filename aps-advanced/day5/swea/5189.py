@@ -4,12 +4,10 @@ sys.stdin = open("txt/5189.txt", "r")
 T = int(input())
 
 def recur(loc, cnt, total):    # 중복이 없고, 본인인덱스에 자기자신이 아닌 순열 만들기
-    # print(cnt,total)
+
     global min_v
 
     if cnt == N-1:
-        # print(total)
-        # print(path)
         min_v = min(min_v, total+golf_zone[loc][0])
         return
 
@@ -29,11 +27,8 @@ for tc in range(1, T+1):
 
     golf_zone = [list(map(int, input().split())) for _ in range(N)]
 
-    # p = [i for i in range(N)]
-    # print(p)
-    # path = []
     visited = [0] * N
-    # visited[0] = 1
+
     min_v = 1000
 
     recur(0, 0, 0)
