@@ -1,8 +1,8 @@
 import sys
 sys.stdin = open("txt/5188.txt", "r")
 
-di = [0,1]
-dj = [1,0]
+di = [0, 1]
+dj = [1, 0]
 
 def recur(i,j,N,total):
     global min_v
