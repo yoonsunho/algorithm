@@ -6,12 +6,14 @@ def recur(cnt,start):
     global N
 
     if start == N:
+        # print(cnt)
         return cnt
 
     for i in range(start+1, N):
         if time[start][1] <= time[i][0]:
-            recur(cnt+1, i)
+            return recur(cnt+1, i)
 
+    return cnt
 
 T = int(input())
 for tc in range(1, T+1):
@@ -32,3 +34,6 @@ for tc in range(1, T+1):
     result = recur(1,0)
 
     print(f'#{tc} {result}')
+
+    def mini_sum(arr):
+        sum(arr)
