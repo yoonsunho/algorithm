@@ -1,6 +1,7 @@
 import sys
 sys.stdin = open("txt/1861.txt", "r")
 
+# 정사각형 방 강사님 정답 코드
 di = [0, 1, 0, -1]
 dj = [1, 0, -1, 0]
 
