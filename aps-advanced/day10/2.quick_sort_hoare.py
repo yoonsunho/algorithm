@@ -1,15 +1,16 @@
 # 피벗: 제일 왼쪽 요소
 def partitioning(left, right):
+
     pivot = arr[left]
 
     i = left + 1
     j =right
     
-    while i < j:
-        # i = 큰 값을 검색하면서 오른쪽으로 진행
+    while i <= j:
+        # i = (피봇 보다)큰 값을 검색하면서 오른쪽으로 진행
         while i <= j and arr[i] <= pivot:
             i += 1
-        # j = 작은 값을 검색하면서 왼쪽으로 진행
+        # j = (피봇 보다)작은 값을 검색하면서 왼쪽으로 진행
         while i <= j and arr[j] >= pivot:
             j -= 1
 
@@ -17,7 +18,7 @@ def partitioning(left, right):
         if i < j:
             arr[i], arr[j]= arr[j], arr[i]
     
-    # pivot 위치를 확정시켜 주기(j와 바꾸기)
+    # pivot 위치를 확정시켜 주기(피봇과 j와 바꾸기)(swap 을 통해 i 위치가 j 가 됨)
     arr[left], arr[j] = arr[j], arr[left]
     return j
 # 피벗 제일 오른쪽 요소
