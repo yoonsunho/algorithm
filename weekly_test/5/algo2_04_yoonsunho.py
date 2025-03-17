@@ -59,5 +59,6 @@ for tc in range(1, T+1):
     max_num = max(bin_to_dec(pre_num), bin_to_dec(in_num), bin_to_dec(post_num))
     # print(max_num)
 
+    # print(int('1001',2))
 
     print(f'#{tc} {max_num}')
