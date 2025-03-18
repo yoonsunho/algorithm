@@ -27,6 +27,7 @@ def partitioning(left, right):
 
 # left, right : 작업 범위
 def quick_sort(left,right):
+
     if left < right:
         # pivot 기준으로 정렬시킨다
         pivot = partitioning(left,right)
