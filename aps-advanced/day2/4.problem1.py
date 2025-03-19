@@ -9,6 +9,7 @@ answer: 0 120 12 7 76 24 60 121 124 103
 
 # 2진수를 10진수로 변환
 def binary_to_decimal(binary_str):
+
     decimal_number = 0
     power = 0
 
@@ -19,7 +20,6 @@ def binary_to_decimal(binary_str):
         power += 1
 
     return decimal_number
-
 
 word = input().strip()
 
