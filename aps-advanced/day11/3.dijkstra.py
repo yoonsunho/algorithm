@@ -41,10 +41,12 @@ start_node = 0  # 문제에 따라 다름
 graph = [[] for _ in range(V)]  # 인접 리스트로 구현
 
 for _ in range(E):
-    u,v,w = map(int, input().split())
+    u, v, w = map(int, input().split())
 
-    graph[u].append((w,v))  # 단방향 그래프!!
-    
+    graph[u].append((w, v))  # 단방향 그래프!!
+
+print(graph)
+
 # 0 에서 출발하여 다른 노드들 까지의 최단 거리를 모두 구한다
 result_dists = dijkstra(0)
 print(result_dists)     # [0, 2, 3, 9, 6, 10]
