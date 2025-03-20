@@ -11,6 +11,6 @@ for tc in range(1,T+1):
 
     idx_i, idx_j = [0] * (N), [0]*N
     for i in range(N):
-
+        pass
 
     print(f'#{tc}')
