@@ -31,17 +31,11 @@ def dijkstra(st_i, st_j):
             if s_j + dj[i] < 0 or s_j + dj[i] >= N:
                 continue
 
-            # 복구가 필요하면
-            if int(hei[s_i+di[i]][s_j+dj[i]]) > 0:
-                next_dist = int(hei[s_i+di[i]][s_j+dj[i]])
-            else:
-                next_dist = 0
-
             # 다음 위치 갱신
             next_i, next_j = s_i + di[i], s_j + dj[i]
 
             # 거리 누적 합으로 갱신
-            new_dist = dist + next_dist
+            new_dist = dist + int(hei[next_i][next_j])
 
             # 원래 dists 에 저장된 이동거리 보다 길거나 같으면 pass
             if new_dist >= dists[next_i][next_j]:
