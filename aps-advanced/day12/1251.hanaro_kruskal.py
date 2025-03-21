@@ -8,7 +8,8 @@ def find_set(x):
     if parents[x] == x:
         return x
     
-    # 경로 압축 : 시간 단축
+    # 경로 압축 : 시
+    # 간 단축
     parents[x] = find_set(parents[x])
     return parents[x]
 
