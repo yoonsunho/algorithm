@@ -13,7 +13,7 @@ def recur(cnt):
         return
 
     # 만약 카드가 1-6까지 6개 있다면?
-    for num in range(1,7):
+    for num in range(1, 7):
         path.append(num)
         recur(cnt + 1)
         path.pop()

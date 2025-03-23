@@ -22,7 +22,7 @@ def recur(cnt):
         return
 
     # 만약 카드가 1-6까지 6개 있다면?
-    for num in range(1,7):
+    for num in range(1, 7):
         # 이미 num을 뽑았다면 뽑지 마라(중복 제거)
         # == num 을 뽑지 않았을 때만 뽑아라
         # if num in path:     # but in 은 시간을 너무 많이 잡아먹음... O(n)
