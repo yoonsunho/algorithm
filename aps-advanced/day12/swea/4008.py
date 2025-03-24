@@ -3,7 +3,7 @@ sys.stdin = open("txt/4008.txt", "r")
 
 op = ['+', '-', '*', '/']
 
-def do_count(arr):
+def do_count(arr):      # 연산작업 시행
 
     n_list = num_list[:]
     # print(num_list)
@@ -26,9 +26,9 @@ def do_count(arr):
 
 def dfs(cnt):
 
-    global path
+    global path     # 연산자 순열 담을 리스트
     global min_v, max_v
-    # result = []
+
 
     if cnt == N-1:
         print(path)
@@ -49,7 +49,6 @@ def dfs(cnt):
         path.pop()
         visited[i] = 0
 
-    # return result
 
 T = int(input())
 for tc in range(1, T+1):

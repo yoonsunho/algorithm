@@ -2,7 +2,7 @@ import sys
 sys.stdin = open("txt/4008.txt", "r")
 op = ['+','-','*','/']
 
-def do_count(arr):
+def do_count(arr):      #
 
     # total = 0
     total = num_list[0]
