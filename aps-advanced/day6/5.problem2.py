@@ -1,14 +1,14 @@
 # 도전과제 주사위
 # 주사위 눈금 N개를 던져서 나올 수 있는 모든 조합 출력
 
-arr = [1,2,3,4,5,6]
+arr = [1, 2, 3, 4, 5, 6]
 n = 3
 
 path = []
 
 
 # 5명 중 3명을 뽑는 문제
-def recur(cnt,start):
+def recur(cnt, start):
     if cnt == n:
         print(*path)
         return
