@@ -1,3 +1,8 @@
+'''
+#1 15
+#2 23
+#3 23
+'''
 import heapq
 
 def prim(cnt,st_node):  # 이동 간선의 수, 시작 정점
