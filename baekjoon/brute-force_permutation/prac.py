@@ -1,2 +1,3 @@
-arr= [1,2,3]
-print(arr.pop(2))
+a = 'abc'
+a.pop(0)
+print(a)
