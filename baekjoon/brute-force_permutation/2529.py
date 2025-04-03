@@ -1,39 +1,25 @@
 # 0325
 
 def find_max():
-    # result = ''
-    n_list = num_list[:]    # 문자열 수정할 거기 때문에 복사해주기
-
-    if op[0] == ">":    # 초기값 지정해주기
-        result = '9'
-        n_list.pop()
-    else:
-        cnt = 0
-        while op[cnt] == "<":
-            cnt += 1
-        result = str(n_list.pop(K-cnt-1))
-        n_list.pop(K-cnt-1)
+    result = ''
+    n_list = num_list[:]  # 문자열 수정할 거기 때문에 복사해주기
 
     i = 0
-    while i <= K-2:
-        if op[i] == ">":
-            cnt = 0
-            while (i + cnt + 1) <= K-1 and op[i+cnt+1] == "<":
+    while i <= K - 1:
+        if op[i] == "<":
+            cnt = 1
+            while (i + cnt) <= (K - 1) and op[i + cnt] == "<":
                 cnt += 1
-            # print(cnt)
-            result += str(n_list.pop(len(n_list)-1-cnt))
-        else:   # "<" 만났을 때
-            cnt = 0
-            while (i + cnt + 1) <= K-1 and op[i+cnt+1] == "<":
-                cnt += 1
-            # print(cnt)
-            result += str(n_list.pop(len(n_list)-1-cnt))
-            # print(result)
+            result += str(n_list.pop(-cnt-1))
+
+        else:  # ">"
+            result += str(n_list.pop(-1))
         i += 1
+    # print(i)
 
-    result += str(n_list.pop())
 
-    # print(result)
+    result += str(n_list.pop(-1))
+
     return result
 
 def find_min():
@@ -44,13 +30,14 @@ def find_min():
     while i <= K-1:
         if op[i] == ">":
             cnt = 1
-            while (i+cnt)<= K-1 and op[i+cnt] == ">":
+            while (i+cnt) <= (K-1) and op[i+cnt] == ">":
                 cnt += 1
             result += str(n_list.pop(cnt))
 
         else:   # "<"
             result += str(n_list.pop(0))
         i += 1
+
 
     result += str(n_list.pop(0))
 
