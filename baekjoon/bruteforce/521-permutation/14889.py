@@ -20,11 +20,11 @@ def find_min(silver, link):
     min_v = min(min_v, abs(sil_cnt-link_cnt))
 
 
-def dfs(cnt,st):
+def dfs(cnt, st):
     global silver_team
 
     if cnt == N//2:
-        link_team =[]
+        link_team = []
         for i in range(N):
             if i not in silver_team:
                 link_team.append(i)
@@ -51,6 +51,6 @@ silver_team = []
 visited = [0] * N
 
 min_v = float('inf')
-dfs(0,0)
+dfs(0, 0)
 
 print(min_v)
