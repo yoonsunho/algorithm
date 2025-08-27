@@ -19,10 +19,11 @@ for i in range(1, 5):    # COUNTS[i] 까지의 합계
 
 print(COUNTS)   # [1, 4, 5, 6, 8]
 
+# DATA = [0, 4, 1, 3, 1, 2, 4, 1]
 # 3단계
 for i in range(N-1, -1, -1):
     COUNTS[DATA[i]] -= 1    # DATA[i]까지의 개수 1개 감소
     TEMP[COUNTS[DATA[i]]] = DATA[i]     # DATA[i] 까지 차지한 칸 수 중 가장 오른쪽에 DATA[i] 기록
 
-print(TEMP)
+print(TEMP)     # [0, 1, 1, 1, 2, 3, 4, 4]
 
